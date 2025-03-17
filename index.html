@@ -10,7 +10,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #000;
+            background-color: #fff;
         }
 
         #card-container {
@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <div id="g_id_onload" data-client_id="51630367544-clbvr1bstsho997lm67p2usudtlf6kcq.apps.googleusercontent.com"
+    <div id="g_id_onload" data-client_id="851630367544-clbvr1bstsho997lm67p2usudtlf6kcq.apps.googleusercontent.com"
         data-context="signin" data-ux_mode="popup" data-callback="handleCredentialResponse">
     </div>
 
@@ -43,6 +43,7 @@
     <div id="card-container"></div>
     <div class="result"></div>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
 
     <script src="js/apirequest.js"></script>
 </body>

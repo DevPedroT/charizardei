@@ -102,3 +102,6 @@ function handleCredentialResponse(response) {
 
     // Aqui você pode enviar os dados para o backend para autenticação
 }
+
+
+
