@@ -88,7 +88,7 @@ $(document).ready(function () {
             });
         }, 300); // Pequeno delay para evitar requisições excessivas
     });
-}); 
+});
 
 
 
