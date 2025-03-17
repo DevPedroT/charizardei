@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charizardei</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        .card img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Buscador de Cartas Pokémon</h1>
+    <input type="text" id="search" placeholder="Digite o nome da carta...">
+    <div id="card-container"></div>
+    <div class="result"></div>
+
+    <script src="js/apirequest.js"></script>
+</body>
+
+</html>
