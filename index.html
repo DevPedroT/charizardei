@@ -10,7 +10,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color:red; 
+            background-color: #000;
         }
 
         #card-container {
@@ -33,10 +33,17 @@
 </head>
 
 <body>
+    <div id="g_id_onload"
+     data-client_id="SUA_CLIENT_ID_AQUI"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-callback="handleCredentialResponse">
+</div>
     <h1>Buscador de Cartas Pokémon</h1>
     <input type="text" id="search" placeholder="Digite o nome da carta...">
     <div id="card-container"></div>
     <div class="result"></div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 
     <script src="js/apirequest.js"></script>
 </body>
