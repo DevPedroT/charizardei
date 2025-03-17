@@ -89,3 +89,16 @@ $(document).ready(function () {
         }, 300); // Pequeno delay para evitar requisições excessivas
     });
 }); 
+
+
+
+function handleCredentialResponse(response) {
+    // O token JWT do usuário
+    console.log("Credenciais do usuário:", response.credential);
+
+    // Decodificar as informações do usuário
+    const userData = jwt_decode(response.credential);
+    console.log("Usuário logado:", userData);
+
+    // Aqui você pode enviar os dados para o backend para autenticação
+}
